@@ -322,7 +322,7 @@ body {
 }
 
 .row>* {
-    float: left;
+    margin: 0 auto;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;

@@ -88,10 +88,10 @@ def newsResult_page():
 #     return render_template("word.html",news_info=data_info)
 
 
-# # 链接到我的个人主页
-# @app.route('/team')
-# def team_page():
-#     return render_template("team.html")
+# 链接到我的个人主页
+@app.route('/team')
+def team_page():
+    return render_template("team.html")
 
 
 # # 数据库文本信息分析，topK8的词语及频率，暂时用的是直方图
