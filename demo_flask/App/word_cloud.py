@@ -12,12 +12,12 @@ from spider.spider_data.database import Database
 
 def draw_wordcloud(bv, text):
     
-    img = Image.open(r'/home/featurize/work/demo_flask/App/static/assets/img/wordcloud-img/wordcloud-bg-3.jpg')   #打开遮罩图片
+    img = Image.open(r'/home/featurize/work/git-flask/flask_bilibili_spider/demo_flask/App/static/assets/img/wordcloud-img/wordcloud-bg-3.jpg')   #打开遮罩图片
     img_array = np.array(img)   #将图片转换为数组
     wc = WordCloud(
         background_color='white',
         mask=img_array,
-        font_path="/home/featurize/work/demo_flask/App/static/spatial/assets/fonts/MSYH.TTC"
+        font_path="git-flask/flask_bilibili_spider/demo_flask/App/static/spatial/assets/fonts/MSYH.TTC"
     )
     wc.generate_from_text(text)
 
@@ -29,7 +29,7 @@ def draw_wordcloud(bv, text):
     plt.show()    #显示生成的词云图片
 
     #输出词云图片到文件
-    plt.savefig('/home/featurize/work/demo_flask/App/static/assets/img/wordcloud-img/{}.jpg'.format(bv),dpi=500)
+    plt.savefig('git-flask/flask_bilibili_spider/demo_flask/App/static/assets/img/wordcloud-img/{}.jpg'.format(bv),dpi=500)
 
 
 if __name__ == "__main__":
