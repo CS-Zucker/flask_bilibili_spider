@@ -1,0 +1,6 @@
+wordcloud词云报错：
+ValueError: Only supported for TrueType fonts
+
+pip install --upgrade pip
+pip install --upgrade wordcloud
+pip install --upgrade pillow

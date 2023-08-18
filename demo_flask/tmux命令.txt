@@ -1,0 +1,11 @@
+tmux命令
+
+tmux  ls  
+
+tmux new -s flask
+
+ ctrl + b   d 
+
+tmux attach -t <session-name>
+
+tmux kill-session -t <session-name>
